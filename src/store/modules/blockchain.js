@@ -2,7 +2,7 @@ import axios from "axios"
 import { RpcClient } from "tendermint"
 
 const state = {
-  rpc: "http://localhost:26657",
+  rpc: "https://nam-rpc.systemd.run",
   //lcd: "https://gaia-seeds.interblock.io:1317",
   status: {
     listen_addr: "",
@@ -24,7 +24,7 @@ const state = {
   roundStep: ""
 }
 
-const client = RpcClient("ws://localhost:26657")
+const client = RpcClient("ws://65.109.56.215:26657/websocket")
 
 const actions = {
   subNewBlock({ commit, dispatch }) {
