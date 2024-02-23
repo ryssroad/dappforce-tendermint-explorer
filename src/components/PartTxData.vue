@@ -63,7 +63,9 @@ export default {
     name: { type: String },
     basePath: { type: String },
     pathPrefix: { type: String, default: "" },
+    // eslint-disable-next-line
     includeFields: { type: Array, default: [] },
+    // eslint-disable-next-line
     excludeFields: { type: Array, default: [] }
   },
   data () {
